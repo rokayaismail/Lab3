@@ -13,7 +13,7 @@ for (var i = 1; i <= 10; i++) {
     cell2.innerHTML = factorial(i);
 
 }
-
+document.getElementById("myButton").addEventListener("click",function(){
 var num1 = null;
 do {
     if (num1 != null)
@@ -21,4 +21,4 @@ do {
     num1 = prompt("Enter number", "1");
 } while (isNaN(num1) || num1 == null);
 
-alert("the factorial of " + num1 + " is " + factorial(parseInt(num1)));
+alert("the factorial of " + num1 + " is " + factorial(parseInt(num1)));});
